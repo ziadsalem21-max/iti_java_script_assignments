@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADV_CSS_project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nata+Sans:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <div class="lift_header">
+          <img src="imgs/logo.png" alt="">
+      </div>
+      <div class="right_header">
+          <ul>
+              <li class="items">Home</li>
+              <li class="items">About</li>
+              <li class="items">Services</li>
+              <li class="items">Blog</li>
+              <li class="items">Contact</li>
+              <li class="visit_us_button">Visit Us</li>
+          </ul>
+      </div>
+   </div>
+
+   <main>
+      <div class="lift_main">
+          <div class="animted_logo">
+              <img src="imgs/hero-icon.png" alt="">
+          </div>
+          <div class="text_main">
+              <h1>We make cloths that suit you</h1>
+          </div>
+          <div class="subtext_main">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum assumenda exercitationem repudiandae officiis adipisci repellat minima eaque voluptatem perferendis laborum atque ad deleniti distinctio.</p>
+          </div>
+          <div class="button_services">Our Services</div>
+      </div>
+      <div class="right_main">
+          <img src="imgs/h1_hero1.png" alt="">
+      </div>
+   </main>
+
+   <div class="our_services">
+      <div class="services">
+          <div class="info">
+              <img src="imgs/offers1.png" alt="">
+              <div class="order">1</div>
+              <h3>Tailor Sewing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolores!</p>
+          </div>
+      </div>
+      <div class="services">
+          <div class="info">
+              <img src="imgs/offers2.png" alt="">
+              <div class="order">2</div>
+              <h3>Measurement</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+      </div>
+      <div class="services">
+          <div class="info">
+              <img src="imgs/offers3.png" alt="">
+              <div class="order">3</div>
+              <h3>Ready-made</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+      </div>
+   </div>
+
+   <div class="about_us">
+      <div class="left_about">
+          <img src="imgs/visit_bg.png" alt="">
+      </div>
+      <div class="right_about">
+          <h2>About our <br> tailor house</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+          <div class="about_button">More About Us</div>
+      </div>
+   </div>
+
+   <section class="why_us">
+      <h2>Why use our service?</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+   </section>
+
+   <section class="my_servcies_container">
+      <div class="my_servcies">
+          <img src="imgs/services1.svg" alt="">
+          <h3>Tailor Sewing</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="my_servcies">
+          <img src="imgs/services2.svg" alt="">
+          <h3>Tailor Sewing</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="my_servcies">
+          <img src="imgs/services3.svg" alt="">
+          <h3>Tailor Sewing</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="my_servcies">
+          <img src="imgs/services4.svg" alt="">
+          <h3>Tailor Sewing</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+   </section>
+
+   <div class="video-container" onclick="playVideo(this)">
+      <div class="play-btn"></div>
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+   </div>
+
+   <footer>
+      <div class="socials">
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">Twitter</a>
+      </div>
+      <p>&copy; 2025 Tailor House. All Rights Reserved.</p>
+   </footer>
+
+   <script>
+   function playVideo(container) {
+     const iframe = container.querySelector('iframe');
+     iframe.style.display = 'block';
+     container.classList.add("playing");
+     container.style.backgroundImage = 'none'; 
+   }
+   </script>
+</body>
+</html>

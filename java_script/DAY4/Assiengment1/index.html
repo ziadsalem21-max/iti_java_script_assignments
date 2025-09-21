@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Table</h1>
+
+    <form id="studentForm">
+      <input type="text" id="studentName" placeholder="Enter student name" required>
+      <span id="nameError" class="error"></span>
+
+      <input type="number" id="studentAge" placeholder="Enter student age" required>
+      <span id="ageError" class="error"></span>
+
+      <input type="submit" value="Add Student">
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentBody">
+        <!-- students will be added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

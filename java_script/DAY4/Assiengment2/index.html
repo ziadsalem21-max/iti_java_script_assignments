@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider + Dark Mode</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <h2>My Slider</h2>
+    <button id="toggleMode">🌙 Dark Mode</button>
+  </div>
+
+  <div class="slider-container">
+    <img id="slider" class="slider-image" src="imgs/Picture (120).jpg" alt="Slider Image">
+
+    <div class="controls">
+      <button class="prev" onclick="prevSlide()">&#10094; Prev</button>
+      <button class="play" onclick="startSlider()">▶ Play</button>
+      <button class="stop" onclick="stopSlider()">■ Stop</button>
+      <button class="next" onclick="nextSlide()">Next &#10095;</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

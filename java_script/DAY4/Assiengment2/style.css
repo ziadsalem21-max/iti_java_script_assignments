@@ -1,0 +1,109 @@
+/* ========== General Styles ========== */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Top Bar */
+.top-bar {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: background 0.3s, color 0.3s;
+}
+.top-bar h2 {
+  margin: 0;
+}
+#toggleMode {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #2a9d8f;
+  color: white;
+  font-size: 14px;
+}
+#toggleMode:hover {
+  background: #21867a;
+}
+
+/* Slider */
+.slider-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  margin-top: 40px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.slider-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.controls {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #fff;
+}
+
+.prev, .next {
+  background: #f4a261;
+}
+.prev:hover, .next:hover {
+  background: #e76f51;
+}
+
+.play {
+  background: #2a9d8f;
+}
+.play:hover {
+  background: #21867a;
+}
+
+.stop {
+  background: #e63946;
+}
+.stop:hover {
+  background: #b91c1c;
+}
+
+/* ========== Dark Mode ========== */
+body.dark {
+  background: #1e1e1e;
+  color: #eee;
+}
+body.dark .slider-container {
+  background: #2b2b2b;
+}
+body.dark .top-bar {
+  background: #2b2b2b;
+}
